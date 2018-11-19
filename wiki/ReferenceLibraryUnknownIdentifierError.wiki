@@ -1,0 +1,6 @@
+#summary Reference: UnknownIdentifierError - Indicates that an identifier could not be resolved at runtime
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !UnknownIdentifierError =
+
+Runtime error indicating that an identifier could not be resolved at runtime. 

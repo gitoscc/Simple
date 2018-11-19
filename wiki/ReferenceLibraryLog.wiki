@@ -1,0 +1,49 @@
+#summary Reference: Log - Logging related runtime functions
+
+,,namespace com.google.devtools.simple.runtime,,
+= Log =
+
+Logging related runtime functions.
+
+[ReferenceLibraryLog#Error Error]
+          Logs an error message.
+[ReferenceLibraryLog#Info Info]
+          Logs an info message.
+[ReferenceLibraryLog#Warning Warning]
+          Logs an warning message.
+----
+=== Error ===
+
+{{{
+Static Sub Error(moduleName As String, message As String)
+}}}
+
+    Logs an error message.
+
+    Parameters:
+        moduleName - name of the module reporting the message (e.g. "Simple Runtime Library")
+        message - text to log
+----
+=== Warning ===
+
+{{{
+Static Sub Warning(moduleName As String, message As String)
+}}}
+
+    Logs an warning message.
+
+    Parameters:
+        moduleName - name of the module reporting the message (e.g. "Simple Runtime Library")
+        message - text to log
+----
+=== Info ===
+
+{{{
+Static Sub Info(moduleName As String, message As String)
+}}}
+
+    Logs an info message.
+
+    Parameters:
+        moduleName - name of the module reporting the message (e.g. "Simple Runtime Library")
+        message - text to log

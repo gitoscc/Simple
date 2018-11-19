@@ -1,0 +1,6 @@
+#summary Reference: AssertionFailure - Indicates an assertion failure
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !AssertionFailure =
+
+Runtime error indicating an assertion failure.

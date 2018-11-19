@@ -1,0 +1,47 @@
+#summary Runtime Library Reference
+
+= Functions =
+
+[ReferenceLibraryApplication Application] - Various application related runtime functions
+
+[ReferenceLibraryArrays Arrays] - Various array related runtime functions
+
+[ReferenceLibraryAssertions Assertions] - Checking the runtime state of an application
+
+[ReferenceLibraryCollection Collection] - Unordered set of items
+
+[ReferenceLibraryConversions Conversions] - Various conversion related runtime functions
+
+[ReferenceLibraryDates Dates] - Various date and time related runtime functions
+
+[ReferenceLibraryFiles Files] - Various file related runtime functions
+ 
+[ReferenceLibraryLog Log] - Logging related runtime functions
+
+[ReferenceLibraryMath Math] - Various mathematical runtime functions
+
+[ReferenceLibraryStrings Strings] - Various string related runtime functions
+
+= Runtime Errors =
+
+[ReferenceLibraryAssertionFailure AssertionFailure] - Indicates an assertion failure
+
+[ReferenceLibraryConversionError ConversionError] - Indicates a failed attempt to convert a value of one type into another
+
+[ReferenceLibraryFileAlreadyExistsError FileAlreadyExistsError] - Indicates a failed attempt to create a file
+
+[ReferenceLibraryFileIOError FileIOError] - Indicates a problem accessing a file
+
+[ReferenceLibraryIllegalArgumentError IllegalArgumentError] - Indicates an illegal value for a function or procedure argument
+
+[ReferenceLibraryIndexOutOfBoundsError IndexOutOfBoundsError] - Indicates an array or collection access with an index that is outside of bounds
+
+[ReferenceLibraryNoSuchFileError NoSuchFileError] - Indicates that no file for the given name could be found
+
+[ReferenceLibraryPropertyAccessError PropertyAccessError] - Indicates illegal access to a property
+
+[ReferenceLibraryUninitializedInstanceError UninitializedInstanceError] - Indicates access to uninitialized object or array variable
+
+[ReferenceLibraryUnknownFileHandleError UnknownFileHandleError] - Indicates usage of an unknown file handle
+
+[ReferenceLibraryUnknownIdentifierError UnknownIdentifierError] - Indicates that an identifier could not be resolved at runtime

@@ -1,0 +1,6 @@
+#summary Reference: UninitializedInstanceError - Indicates access to uninitialized object or array variable
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !UninitializedInstanceError =
+
+Runtime error indicating an access to an instance or array variable that is not properly initialized. 

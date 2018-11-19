@@ -1,0 +1,319 @@
+#summary Reference: Dates - Various date and time related runtime functions
+
+,,namespace com.google.devtools.simple.runtime,,
+= Dates =
+
+Various date and time related runtime functions.
+
+[ReferenceLibraryDates#DATE_YEAR DATE_YEAR]
+[ReferenceLibraryDates#DATE_MONTH DATE_MONTH]
+[ReferenceLibraryDates#DATE_DAY DATE_DAY]
+[ReferenceLibraryDates#DATE_WEEK DATE_WEEK]
+[ReferenceLibraryDates#DATE_HOUR DATE_HOUR]
+[ReferenceLibraryDates#DATE_MINUTE DATE_MINUTE]
+[ReferenceLibraryDates#DATE_SECOND DATE_SECOND]
+    Date/time interval kind constants.
+
+[ReferenceLibraryDates#DATE_JANUARY DATE_JANUARY]
+[ReferenceLibraryDates#DATE_FEBRUARY DATE_FEBRUARY]
+[ReferenceLibraryDates#DATE_MARCH DATE_MARCH]
+[ReferenceLibraryDates#DATE_APRIL DATE_APRIL]
+[ReferenceLibraryDates#DATE_MAY DATE_MAY]
+[ReferenceLibraryDates#DATE_JUNE DATE_JUNE]
+[ReferenceLibraryDates#DATE_JULY DATE_JULY]
+[ReferenceLibraryDates#DATE_AUGUST DATE_AUGUST]
+[ReferenceLibraryDates#DATE_SEPTEMBER DATE_SEPTEMBER]
+[ReferenceLibraryDates#DATE_OCTOBER DATE_OCTOBER]
+[ReferenceLibraryDates#DATE_NOVEMBER DATE_NOVEMBER]
+[ReferenceLibraryDates#DATE_DECEMBER DATE_DECEMBER]
+    Month constants.
+
+[ReferenceLibraryDates#DATE_MONDAY DATE_MONDAY]
+[ReferenceLibraryDates#DATE_TUESDAY DATE_TUESDAY]
+[ReferenceLibraryDates#DATE_WEDNESDAY DATE_WEDNESDAY]
+[ReferenceLibraryDates#DATE_THURSDAY DATE_THURSDAY]
+[ReferenceLibraryDates#DATE_FRIDAY DATE_FRIDAY]
+[ReferenceLibraryDates#DATE_SATURDAY DATE_SATURDAY]
+[ReferenceLibraryDates#DATE_SUNDAY DATE_SUNDAY]
+    Weekday constant.
+
+[ReferenceLibraryDates#DateAdd DateAdd]
+          Adds a time interval to the given date.
+[ReferenceLibraryDates#DateValue DateValue]
+          Creates a date from the given string.
+[ReferenceLibraryDates#Day Day]
+          Returns the day of the month for the given date.
+[ReferenceLibraryDates#FormatDate FormatDate]
+          Converts and formats the given date into a string.
+[ReferenceLibraryDates#Hour Hour]
+          Returns the hours for the given date.
+[ReferenceLibraryDates#Minute Minute]
+          Returns the minutes for the given date.
+[ReferenceLibraryDates#Month Month]
+          Returns the month of the given date.
+[ReferenceLibraryDates#MonthName MonthName]
+          Returns the name of the month for the given date.
+[ReferenceLibraryDates#Now Now]
+          Returns the current date and time.
+[ReferenceLibraryDates#Second Second]
+          Returns the seconds for the given date.
+[ReferenceLibraryDates#Timer Timer]
+          Returns the current system time in milliseconds.
+[ReferenceLibraryDates#Weekday Weekday]
+          Returns the weekday for the given date.
+[ReferenceLibraryDates#WeekdayName WeekdayName]
+          Returns the name of the weekday for the given date.
+[ReferenceLibraryDates#Year Year]
+          Returns the year of the given date.
+ 
+
+----
+=== DATE_YEAR ===
+=== DATE_MONTH ===
+=== DATE_DAY ===
+=== DATE_WEEK ===
+=== DATE_HOUR ===
+=== DATE_MINUTE ===
+=== DATE_SECOND ===
+{{{           
+Const DATE_YEAR As Integer
+Const DATE_MONTH As Integer           
+Const DATE_DAY As Integer           
+Const DATE_WEEK As Integer           
+Const DATE_HOUR As Integer           
+Const DATE_MINUTE As Integer           
+Const DATE_SECOND As Integer           
+}}}
+Date/time interval kind constants.
+----
+=== DATE_JANUARY ===
+=== DATE_FEBRUARY ===
+=== DATE_MARCH ===
+=== DATE_APRIL ===
+=== DATE_MAY ===
+=== DATE_JUNE ===
+=== DATE_JULY ===
+=== DATE_AUGUST ===
+=== DATE_SEPTEMBER ===
+=== DATE_OCTOBER ===
+=== DATE_NOVEMBER ===
+=== DATE_DECEMBER ===
+{{{
+Const DATE_JANUARY As Integer           
+Const DATE_FEBRUARY As Integer
+Const DATE_MARCH As Integer
+Const DATE_APRIL As Integer
+Const DATE_MAY As Integer
+Const DATE_JUNE As Integer
+Const DATE_JULY As Integer
+Const DATE_AUGUST As Integer
+Const DATE_SEPTEMBER As Integer
+Const DATE_OCTOBER As Integer
+Const DATE_NOVEMBER As Integer
+Const DATE_DECEMBER As Integer
+}}}
+Month constants.
+----
+=== DATE_MONDAY ===
+=== DATE_TUESDAY ===
+=== DATE_WEDNESDAY ===
+=== DATE_THURSDAY ===
+=== DATE_FRIDAY ===
+=== DATE_SATURDAY ===
+=== DATE_SUNDAY ===
+{{{
+Const DATE_MONDAY As Integer
+Const DATE_TUESDAY As Integer
+Const DATE_WEDNESDAY As Integer
+Const DATE_THURSDAY As Integer
+Const DATE_FRIDAY As Integer
+Const DATE_SATURDAY As Integer           
+Const DATE_SUNDAY As Integer
+}}}
+Weekday constant.
+
+----
+=== !DateAdd ===
+
+{{{
+Static Sub DateAdd(date As Date, intervalKind As Integer, interval As Integer)
+}}}
+
+    Adds a time interval to the given date.
+
+    Parameters:
+        date - date to add to
+        intervalKind - kind of interval (one of DATE_YEAR, DATE_MONTH, DATE_DAY, DATE_WEEK, DATE_HOUR, DATE_MINUTE or DATE_SECOND)
+        interval - units to add
+----
+=== !DateValue ===
+
+{{{
+Static Function DateValue(value As String) As Date
+}}}
+
+    Creates a date from the given string.
+
+    Dates must be formatted as follows:
+    MM/DD/YYYY hh:mm:ss
+    or
+    MM/DD/YYYY
+    where MM is the month (01-12), DD the day (01-31), YYYY the year (0000-9999), hh the hours (00-23), mm the minutes (00-59) and ss the seconds (00-59).
+
+    Parameters:
+        value - string to convert 
+    Returns:
+        date
+----
+=== Day ===
+
+{{{
+Static Function Day(date As Date) As Integer
+}}}
+
+    Returns the day of the month for the given date.
+
+    Parameters:
+        date - date to get day of 
+    Returns:
+        day (range 1 - 31)
+----
+=== !FormatDate ===
+
+{{{
+Static Function FormatDate(date As Date) As String
+}}}
+
+    Converts and formats the given date into a string.
+
+    Parameters:
+        date - date to format 
+    Returns:
+        formatted date
+
+----
+=== Hour ===
+
+{{{
+Static Function Hour(date As Date) As Integer
+}}}
+
+    Returns the hours for the given date.
+
+    Parameters:
+        date - date to use hours of 
+    Returns:
+        hours (range 0 - 23)
+----
+=== Minute ===
+
+{{{
+Static Function Minute(date As Date) As Integer
+}}}
+
+    Returns the minutes for the given date.
+
+    Parameters:
+        date - date to use minutes of 
+    Returns:
+        minutes (range 0 - 59)
+----
+=== Month ===
+
+{{{
+Static Function Month(date As Date) As Integer
+}}}
+
+    Returns the month of the given date.
+
+    Parameters:
+        date - date to use month of 
+    Returns:
+        month: DATE_JANUARY, DATE_FEBRUARY, DATE_MARCH, DATE_APRIL, DATE_MAY, DATE_JUNE, DATE_JULY, DATE_AUGUST, DATE_SEPTEMBER, DATE_OCTOBER, DATE_NOVEMBER, DATE_DECEMBER
+----
+=== !MonthName ===
+
+{{{
+Static Function MonthName(date As Date) As String
+}}}
+
+    Returns the name of the month for the given date.
+
+    Parameters:
+        date - date to use month of 
+    Returns:
+        name of month
+----
+=== Now ===
+
+{{{
+Static Function Now() As Date
+}}}
+
+    Returns the current date and time.
+
+    Returns:
+        current date and time
+----
+=== Second ===
+
+{{{
+Static Function Second(date As Date) As Integer
+}}}
+
+    Returns the seconds for the given date.
+
+    Parameters:
+        date - date to use seconds of 
+    Returns:
+        seconds (range 0 - 59)
+----
+=== Timer ===
+
+{{{
+Static Timer() As Long
+}}}
+
+    Returns the current system time in milliseconds.
+
+    Returns:
+        current system time in milliseconds
+----
+=== Weekday ===
+
+{{{
+Static Function Weekday(date As Date) As Integer
+}}}
+
+    Returns the weekday for the given date.
+
+    Parameters:
+        date - date to use weekday of 
+    Returns:
+        weekday: DATE_SUNDAY, DATE_MONDAY, DATE_TUESDAY, DATE_WEDNESDAY, DATE_THURSDAY, DATE_FRIDAY, DATE_SATURDAY
+----
+=== !WeekdayName ===
+
+{{{
+Static Function WeekdayName(date As Date) As String
+}}}
+
+    Returns the name of the weekday for the given date.
+
+    Parameters:
+        date - date to use weekday of 
+    Returns:
+        name of weekday
+----
+=== Year ===
+
+{{{
+Static Function Year(date As Date) As Integer
+}}}
+
+    Returns the year of the given date.
+
+    Parameters:
+        date - date to use year of 
+    Returns:
+        year

@@ -1,0 +1,6 @@
+#summary Reference: IllegalArgumentError - Indicates an illegal value for a function or procedure argument
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !IllegalArgumentError =
+
+Runtime error indicating an illegal value for a function or procedure argument. 

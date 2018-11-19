@@ -1,0 +1,61 @@
+#summary Reference: Phone - Component providing phone-related functionality
+
+,,namespace com.google.devtools.simple.runtime.components,,
+= Phone =
+
+Component providing phone-related functionality. There should be only one phone component per form.
+
+==== Events ====
+[ReferenceComponentPhone#Initialize Initialize]
+         Initialization event.
+
+==== Properties ====
+[ReferenceComponentPhone#Available Available]
+          Available property (read-only property).
+
+==== Functions ====
+[ReferenceComponentPhone#Call Call]
+    Places a call to the given phone number.
+[ReferenceComponentPhone#Vibrate Vibrate]
+    Vibrates the phone.
+
+----
+=== Initialize ===
+
+{{{
+Event Initialize()
+}}}
+
+    Event raised upon component initialization.
+----
+=== Available ===
+
+{{{
+Property Available As Boolean
+}}}
+
+    This property indicates whether the sensor is available on the device running the application.
+    This property is read-only.
+
+----
+=== Call ===
+
+{{{
+Sub Call(phoneNumber As String)
+}}}
+
+    Places a call to the given phone number.
+
+    Parameters:
+        phoneNumber - phone number in the form of numbers only (no spaces, no dashes etc.)
+----
+=== Vibrate ===
+
+{{{
+Sub Vibrate(duration As Integer)
+}}}
+
+    Vibrates the phone.
+
+    Parameters:
+        duration - duration in milliseconds

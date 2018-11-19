@@ -1,0 +1,6 @@
+#summary Reference: FileAlreadyExistsError - Indicates a failed attempt to create a file
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !FileAlreadyExistsError =
+
+Runtime error indicating that the attempt to create a file failed because there is a file already existing with the same name.

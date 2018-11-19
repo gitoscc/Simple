@@ -1,0 +1,6 @@
+#summary Reference: NoSuchFileError - Indicates that no file for the given name could be found
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !NoSuchFileError =
+
+Runtime error indicating that no file for the given name could be found. 

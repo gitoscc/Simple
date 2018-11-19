@@ -1,0 +1,33 @@
+#summary Reference: Assertions - Checking the runtime state of an application
+
+,,namespace com.google.devtools.simple.runtime,,
+= Assertions =
+
+Assertions allow test against assumptions about the runtime state of an application. A failing assertion will result in an AssertionFailure runtime error.
+
+[ReferenceLibraryAssertions#AssertFalse AssertFalse]
+          Tests whether an assertion is false.
+[ReferenceLibraryAssertions#AssertTrue AssertTrue]
+          Tests whether an assertion is true.
+ ----
+=== !AssertTrue ===
+
+{{{
+Static Sub AssertTrue(expression As Variant)
+}}}
+
+    Tests whether an assertion is true. Evaluates the given expression and causes an AssertionFailure runtime error if the expression does not evaluate to True.
+
+    Parameters:
+        expression - expression to test
+----
+=== !AssertFalse ===
+
+{{{
+Static Sub AssertFalse(expression As Variant)
+}}}
+
+    Tests whether an assertion is false. Evaluates the given expression and causes an AssertionFailure runtime error if the expression does not evaluate to False.
+
+    Parameters:
+        expression - expression to test

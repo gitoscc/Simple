@@ -1,0 +1,6 @@
+#summary Reference: UnknownFileHandleError - Indicates usage of an unknown file handle
+
+,,namespace com.google.devtools.simple.runtime.errors,,
+= !UnknownFileHandleError =
+
+Runtime error indicating an unknown file handle.

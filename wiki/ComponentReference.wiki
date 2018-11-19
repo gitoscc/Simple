@@ -1,0 +1,43 @@
+#summary Component Reference
+
+= Components =
+
+[ReferenceComponentAccelerometerSensor AccelerometerSensor] - Sensor to measure acceleration in 3 dimensions
+
+[ReferenceComponentButton Button] - Push-style button
+
+[ReferenceComponentCanvas Canvas] - Surface to draw on
+
+[ReferenceComponentCheckBox CheckBox] - Two state button that can either be checked or un-checked
+
+[ReferenceComponentEmailPicker EmailPicker] - Editable text box using auto-completion to pick out an email address from contacts
+
+[ReferenceComponentForm Form] - Root component container
+
+[ReferenceComponentImage Image] - Component for displaying images
+
+[ReferenceComponentLabel Label] - Text display
+
+[ReferenceComponentLocationSensor LocationSensor] - Sensor to provide information about the current location
+
+[ReferenceComponentOrientationSensor OrientationSensor] - Sensor to measure absolute orientation in 3 dimensions
+
+[ReferenceComponentPanel Panel] - Container for other components
+
+[ReferenceComponentPasswordTextBox PasswordTextBox] - Editable text box for entering passwords
+
+[ReferenceComponentPhone Phone] - Component providing phone-related functionality
+
+[ReferenceComponentRadioButton RadioButton] - Two state button that can either be checked or un-checked
+
+[ReferenceComponentTextBox TextBox] - Editable text box
+
+[ReferenceComponentTimer Timer] - Timer component
+
+= Layouts =
+
+[ReferenceComponentFrameLayout 	FrameLayout] - Layout for prominently showing a single component
+
+[ReferenceComponentLinearLayout LinearLayout] - Layout for placing components horizontally or vertically
+
+[ReferenceComponentTableLayout TableLayout] - Layout for placing components in tabular form
